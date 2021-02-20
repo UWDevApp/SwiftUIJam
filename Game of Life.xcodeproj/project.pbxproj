@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D209920325E1CB0000635B87 /* EndOfGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGame.swift */; };
+		D209920425E1CB0000635B87 /* EndOfGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGame.swift */; };
 		D2556E3B25E0E44A00377A6F /* GameOfLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */; };
 		D2556E3C25E0E44A00377A6F /* GameOfLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */; };
 		D290B1F325E0CE6D00B64800 /* Game_of_LifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290B1E025E0CE6C00B64800 /* Game_of_LifeApp.swift */; };
@@ -18,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D209920225E1CB0000635B87 /* EndOfGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfGame.swift; sourceTree = "<group>"; };
 		D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeView.swift; sourceTree = "<group>"; };
 		D290B1E025E0CE6C00B64800 /* Game_of_LifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_LifeApp.swift; sourceTree = "<group>"; };
 		D290B1E125E0CE6C00B64800 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 				D290B1E125E0CE6C00B64800 /* ContentView.swift */,
 				D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */,
 				D290B1E225E0CE6D00B64800 /* Assets.xcassets */,
+				D209920225E1CB0000635B87 /* EndOfGame.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -197,6 +201,7 @@
 				D290B1F525E0CE6D00B64800 /* ContentView.swift in Sources */,
 				D290B1F325E0CE6D00B64800 /* Game_of_LifeApp.swift in Sources */,
 				D2556E3B25E0E44A00377A6F /* GameOfLifeView.swift in Sources */,
+				D209920325E1CB0000635B87 /* EndOfGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +212,7 @@
 				D290B1F625E0CE6D00B64800 /* ContentView.swift in Sources */,
 				D290B1F425E0CE6D00B64800 /* Game_of_LifeApp.swift in Sources */,
 				D2556E3C25E0E44A00377A6F /* GameOfLifeView.swift in Sources */,
+				D209920425E1CB0000635B87 /* EndOfGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
