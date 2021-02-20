@@ -10,6 +10,11 @@ import SwiftUI
 
 /// Some view that kind of looks
 struct GameOfLifeView: View {
+  /// Available highlight colors for enabled cells
+  static let highlight: [Color] = [
+      .accentColor, .blue, .green, .orange, .pink, .purple, .red, .yellow
+  ]
+
   /// How much to shift the toggled cell by
   public let shift: Int
 
@@ -22,6 +27,10 @@ struct GameOfLifeView: View {
   /// Keep track of all the cell states
   @State
   private var cells: [[Bool]]
+
+  /// Keep track of the random colors so it's less random
+  @State
+  private var colors: [[Color]]
 
   /// Keep track to see if the cells has been edited
   @State
@@ -39,6 +48,10 @@ struct GameOfLifeView: View {
       repeating: [Bool](repeating: false, count: size),
       count: size
     ))
+    self._colors = State(initialValue: [[Color]](
+      repeating: [Color](repeating: .primary, count: size),
+      count: size
+    ))
   }
 
   /// This is a size by size grid of toggles
@@ -51,11 +64,12 @@ struct GameOfLifeView: View {
               toggle(row: rowIndex, column: columnIndex)
             } label: {
               RoundedRectangle(cornerRadius: 5)
-                .foregroundColor(colorForCell(row: rowIndex,
-                                              column: columnIndex))
+                .foregroundColor(colors[rowIndex][columnIndex])
                 .aspectRatio(contentMode: .fill)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
+            .buttonStyle(PlainButtonStyle())
+            .help("Life is like a box of chocolate")
           }
         }
       }
@@ -64,27 +78,45 @@ struct GameOfLifeView: View {
     }
   }
 
-  /// This is the main view
-  var body: some View {
-    VStack {
-      grid
-
-      Button(action: startGame, label: {
-        Label("Start", systemImage: "play.fill")
-      })
-      .disabled(!isEdited)
-
-    }
-    .padding()
+  /// This is the actual start button
+  var startButton: some View {
+    Button(action: startGame, label: {
+      Label("Start", systemImage: "play.fill")
+    })
+    .buttonStyle(PlainButtonStyle())
+    .disabled(!isEdited)
+    .help("This is a feature, not a bug")
   }
 
-  /// Returns the color of a cell to render in.
-  /// - Parameters:
-  ///   - row: row index of a cell
-  ///   - column: column index of a cell
-  /// - Returns: the color to use for the given cell in
-  func colorForCell(row: Int, column: Int) -> Color {
-    return cells[row][column] ? .accentColor : .primary
+  /// The start button floats on top at bottom right corner
+  var startButtonLayer: some View {
+    HStack {
+      Spacer()
+      VStack {
+        Spacer()
+        Group {
+          if isEdited {
+            startButton
+              .foregroundColor(.white)
+              .background(RoundedRectangle(cornerRadius: 10)
+                            .inset(by: -10)
+                            .foregroundColor(.accentColor))
+          } else {
+            startButton
+          }
+        }
+        .offset(x: -10, y: -10)
+      }
+    }
+  }
+
+  /// This is the main layout
+  var body: some View {
+    ZStack {
+      grid
+      startButtonLayer
+    }
+    .padding()
   }
 
   /// Toggles the state of a specified cell (but apply shifting to the coordinates)
@@ -97,7 +129,26 @@ struct GameOfLifeView: View {
     let shiftedRow = shifted / size
     let shiftedColumn = shifted % size
     cells[shiftedRow][shiftedColumn].toggle()
+    colors[shiftedRow][shiftedColumn]
+      = cells[shiftedRow][shiftedColumn]
+      ? Self.highlight.randomElement()!
+      : .primary
+    #if canImport(UIKit)
+    generateRandomDelayedHapticFeedback()
+    #endif
   }
+
+  /// To make things more confusing, generate a random haptic feedback after delay.
+  #if canImport(UIKit)
+  func generateRandomDelayedHapticFeedback() {
+    let options: [UINotificationFeedbackGenerator.FeedbackType]
+      = [.error, .success, .warning]
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+      UINotificationFeedbackGenerator()
+        .notificationOccurred(options.randomElement()!)
+    }
+  }
+  #endif
 
   /// Moving on to the next stage
   func startGame() {
