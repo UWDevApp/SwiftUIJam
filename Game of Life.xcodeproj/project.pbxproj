@@ -11,18 +11,6 @@
 		A0D4387025E216600042E8FA /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4386E25E216600042E8FA /* WorkView.swift */; };
 		A0D4387425E2578F0042E8FA /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4387325E2578F0042E8FA /* InstaView.swift */; };
 		A0D4387525E2578F0042E8FA /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4387325E2578F0042E8FA /* InstaView.swift */; };
-		A0D4387A25E30ECA0042E8FA /* I am happy with it.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4387925E30ECA0042E8FA /* I am happy with it.aifc */; };
-		A0D4387B25E30ECA0042E8FA /* I am happy with it.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4387925E30ECA0042E8FA /* I am happy with it.aifc */; };
-		A0D4387F25E30ED20042E8FA /* More Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4387E25E30ED20042E8FA /* More Work.aifc */; };
-		A0D4388025E30ED20042E8FA /* More Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4387E25E30ED20042E8FA /* More Work.aifc */; };
-		A0D4388425E30EDB0042E8FA /* The work that Worked.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4388325E30EDB0042E8FA /* The work that Worked.aifc */; };
-		A0D4388525E30EDB0042E8FA /* The work that Worked.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4388325E30EDB0042E8FA /* The work that Worked.aifc */; };
-		A0D4388925E30EE20042E8FA /* Work & Happiness.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4388825E30EE20042E8FA /* Work & Happiness.aifc */; };
-		A0D4388A25E30EE20042E8FA /* Work & Happiness.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4388825E30EE20042E8FA /* Work & Happiness.aifc */; };
-		A0D4388E25E30EEB0042E8FA /* Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4388D25E30EEB0042E8FA /* Work.aifc */; };
-		A0D4388F25E30EEB0042E8FA /* Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4388D25E30EEB0042E8FA /* Work.aifc */; };
-		A0D4389325E30F510042E8FA /* Yes WORK.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4389225E30F510042E8FA /* Yes WORK.aifc */; };
-		A0D4389425E30F510042E8FA /* Yes WORK.aifc in Resources */ = {isa = PBXBuildFile; fileRef = A0D4389225E30F510042E8FA /* Yes WORK.aifc */; };
 		D209920325E1CB0000635B87 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGameView.swift */; };
 		D209920425E1CB0000635B87 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGameView.swift */; };
 		D209920625E1D6F500635B87 /* GameStageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920525E1D6F500635B87 /* GameStageManager.swift */; };
@@ -35,17 +23,23 @@
 		D290B1F625E0CE6D00B64800 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290B1E125E0CE6C00B64800 /* ContentView.swift */; };
 		D290B1F725E0CE6D00B64800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D290B1E225E0CE6D00B64800 /* Assets.xcassets */; };
 		D290B1F825E0CE6D00B64800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D290B1E225E0CE6D00B64800 /* Assets.xcassets */; };
+		D2D5173525E31A0000EB98AA /* Yes_WORK.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5172F25E31A0000EB98AA /* Yes_WORK.aifc */; };
+		D2D5173625E31A0000EB98AA /* Yes_WORK.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5172F25E31A0000EB98AA /* Yes_WORK.aifc */; };
+		D2D5173725E31A0000EB98AA /* Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173025E31A0000EB98AA /* Work.aifc */; };
+		D2D5173825E31A0000EB98AA /* Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173025E31A0000EB98AA /* Work.aifc */; };
+		D2D5173925E31A0000EB98AA /* Work__Happiness.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173125E31A0000EB98AA /* Work__Happiness.aifc */; };
+		D2D5173A25E31A0000EB98AA /* Work__Happiness.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173125E31A0000EB98AA /* Work__Happiness.aifc */; };
+		D2D5173B25E31A0000EB98AA /* I_am_happy_with_it.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173225E31A0000EB98AA /* I_am_happy_with_it.aifc */; };
+		D2D5173C25E31A0000EB98AA /* I_am_happy_with_it.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173225E31A0000EB98AA /* I_am_happy_with_it.aifc */; };
+		D2D5173D25E31A0000EB98AA /* The_work_that_Worked.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173325E31A0000EB98AA /* The_work_that_Worked.aifc */; };
+		D2D5173E25E31A0000EB98AA /* The_work_that_Worked.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173325E31A0000EB98AA /* The_work_that_Worked.aifc */; };
+		D2D5173F25E31A0000EB98AA /* More_Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173425E31A0000EB98AA /* More_Work.aifc */; };
+		D2D5174025E31A0000EB98AA /* More_Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173425E31A0000EB98AA /* More_Work.aifc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A0D4386E25E216600042E8FA /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
 		A0D4387325E2578F0042E8FA /* InstaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaView.swift; sourceTree = "<group>"; };
-		A0D4387925E30ECA0042E8FA /* I am happy with it.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "I am happy with it.aifc"; path = "../../../I am happy with it.aifc"; sourceTree = "<group>"; };
-		A0D4387E25E30ED20042E8FA /* More Work.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "More Work.aifc"; path = "../../../More Work.aifc"; sourceTree = "<group>"; };
-		A0D4388325E30EDB0042E8FA /* The work that Worked.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The work that Worked.aifc"; path = "../../../The work that Worked.aifc"; sourceTree = "<group>"; };
-		A0D4388825E30EE20042E8FA /* Work & Happiness.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Work & Happiness.aifc"; path = "../../../Work & Happiness.aifc"; sourceTree = "<group>"; };
-		A0D4388D25E30EEB0042E8FA /* Work.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Work.aifc; path = ../../../Work.aifc; sourceTree = "<group>"; };
-		A0D4389225E30F510042E8FA /* Yes WORK.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Yes WORK.aifc"; path = "../../../Yes WORK.aifc"; sourceTree = "<group>"; };
 		D209920225E1CB0000635B87 /* EndOfGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfGameView.swift; sourceTree = "<group>"; };
 		D209920525E1D6F500635B87 /* GameStageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStageManager.swift; sourceTree = "<group>"; };
 		D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeView.swift; sourceTree = "<group>"; };
@@ -57,6 +51,12 @@
 		D290B1EF25E0CE6D00B64800 /* Game of Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D290B1F125E0CE6D00B64800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D290B1F225E0CE6D00B64800 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D2D5172F25E31A0000EB98AA /* Yes_WORK.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yes_WORK.aifc; sourceTree = "<group>"; };
+		D2D5173025E31A0000EB98AA /* Work.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Work.aifc; sourceTree = "<group>"; };
+		D2D5173125E31A0000EB98AA /* Work__Happiness.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Work__Happiness.aifc; sourceTree = "<group>"; };
+		D2D5173225E31A0000EB98AA /* I_am_happy_with_it.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = I_am_happy_with_it.aifc; sourceTree = "<group>"; };
+		D2D5173325E31A0000EB98AA /* The_work_that_Worked.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = The_work_that_Worked.aifc; sourceTree = "<group>"; };
+		D2D5173425E31A0000EB98AA /* More_Work.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = More_Work.aifc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,19 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0D4387825E30EB70042E8FA /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				A0D4387925E30ECA0042E8FA /* I am happy with it.aifc */,
-				A0D4387E25E30ED20042E8FA /* More Work.aifc */,
-				A0D4388325E30EDB0042E8FA /* The work that Worked.aifc */,
-				A0D4388825E30EE20042E8FA /* Work & Happiness.aifc */,
-				A0D4388D25E30EEB0042E8FA /* Work.aifc */,
-				A0D4389225E30F510042E8FA /* Yes WORK.aifc */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
 		D290B1DA25E0CE6C00B64800 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +100,7 @@
 				A0D4387325E2578F0042E8FA /* InstaView.swift */,
 				D209920225E1CB0000635B87 /* EndOfGameView.swift */,
 				D290B1E225E0CE6D00B64800 /* Assets.xcassets */,
-				A0D4387825E30EB70042E8FA /* Sounds */,
+				D2D5172E25E31A0000EB98AA /* Sounds */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -142,6 +129,19 @@
 				D290B1F225E0CE6D00B64800 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		D2D5172E25E31A0000EB98AA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D2D5172F25E31A0000EB98AA /* Yes_WORK.aifc */,
+				D2D5173025E31A0000EB98AA /* Work.aifc */,
+				D2D5173125E31A0000EB98AA /* Work__Happiness.aifc */,
+				D2D5173225E31A0000EB98AA /* I_am_happy_with_it.aifc */,
+				D2D5173325E31A0000EB98AA /* The_work_that_Worked.aifc */,
+				D2D5173425E31A0000EB98AA /* More_Work.aifc */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,13 +223,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D4388925E30EE20042E8FA /* Work & Happiness.aifc in Resources */,
-				A0D4387F25E30ED20042E8FA /* More Work.aifc in Resources */,
-				A0D4387A25E30ECA0042E8FA /* I am happy with it.aifc in Resources */,
+				D2D5173D25E31A0000EB98AA /* The_work_that_Worked.aifc in Resources */,
+				D2D5173525E31A0000EB98AA /* Yes_WORK.aifc in Resources */,
+				D2D5173725E31A0000EB98AA /* Work.aifc in Resources */,
+				D2D5173B25E31A0000EB98AA /* I_am_happy_with_it.aifc in Resources */,
 				D290B1F725E0CE6D00B64800 /* Assets.xcassets in Resources */,
-				A0D4389325E30F510042E8FA /* Yes WORK.aifc in Resources */,
-				A0D4388425E30EDB0042E8FA /* The work that Worked.aifc in Resources */,
-				A0D4388E25E30EEB0042E8FA /* Work.aifc in Resources */,
+				D2D5173F25E31A0000EB98AA /* More_Work.aifc in Resources */,
+				D2D5173925E31A0000EB98AA /* Work__Happiness.aifc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,13 +237,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D4388A25E30EE20042E8FA /* Work & Happiness.aifc in Resources */,
-				A0D4388025E30ED20042E8FA /* More Work.aifc in Resources */,
-				A0D4387B25E30ECA0042E8FA /* I am happy with it.aifc in Resources */,
+				D2D5173E25E31A0000EB98AA /* The_work_that_Worked.aifc in Resources */,
+				D2D5173625E31A0000EB98AA /* Yes_WORK.aifc in Resources */,
+				D2D5173825E31A0000EB98AA /* Work.aifc in Resources */,
+				D2D5173C25E31A0000EB98AA /* I_am_happy_with_it.aifc in Resources */,
 				D290B1F825E0CE6D00B64800 /* Assets.xcassets in Resources */,
-				A0D4389425E30F510042E8FA /* Yes WORK.aifc in Resources */,
-				A0D4388525E30EDB0042E8FA /* The work that Worked.aifc in Resources */,
-				A0D4388F25E30EEB0042E8FA /* Work.aifc in Resources */,
+				D2D5174025E31A0000EB98AA /* More_Work.aifc in Resources */,
+				D2D5173A25E31A0000EB98AA /* Work__Happiness.aifc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +398,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -419,6 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
