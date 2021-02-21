@@ -43,7 +43,7 @@ struct WorkView: View {
   }
   
   var body: some View {
-    ScrollView {
+    ScrollView(.vertical) {
       VStack(alignment: .leading) {
         //If we want to do something fancy to this I guess we can???
         Text("Not that kind of programming")
@@ -106,14 +106,16 @@ struct WorkView: View {
           }
         }
 
-        HStack {
-          Spacer()
-          // do we want more?
-          if trollNumFieldVal == "42" && trollText == "Xcode" && trollSliderVal == 69 {
+        // do we want more?
+        if trollNumFieldVal == "42" && trollText == "Xcode" && trollSliderVal == 69 {
+          HStack {
+            Text("What surprise will come next?")
+
             Button("Next", action: {
               stageManager.advance(from: .work)
             })
           }
+          .padding(.top)
         }
         Spacer()
       }
