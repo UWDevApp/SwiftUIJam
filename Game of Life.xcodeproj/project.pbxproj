@@ -11,6 +11,14 @@
 		A0D4387025E216600042E8FA /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4386E25E216600042E8FA /* WorkView.swift */; };
 		A0D4387425E2578F0042E8FA /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4387325E2578F0042E8FA /* InstaView.swift */; };
 		A0D4387525E2578F0042E8FA /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4387325E2578F0042E8FA /* InstaView.swift */; };
+		1CCB544A25E2E5E8006D7294 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCB544925E2E5E8006D7294 /* WidgetKit.framework */; };
+		1CCB544C25E2E5E8006D7294 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCB544B25E2E5E8006D7294 /* SwiftUI.framework */; };
+		1CCB544F25E2E5E8006D7294 /* Widget2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB544E25E2E5E8006D7294 /* Widget2.swift */; };
+		1CCB545225E2E5E9006D7294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CCB545125E2E5E9006D7294 /* Assets.xcassets */; };
+		1CCB545825E2E5E9006D7294 /* Widget2Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1CCB544725E2E5E8006D7294 /* Widget2Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1CCB546A25E2F48E006D7294 /* GameStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB546925E2F48E006D7294 /* GameStage.swift */; };
+		1CCB546B25E2F48E006D7294 /* GameStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB546925E2F48E006D7294 /* GameStage.swift */; };
+		1CCB546C25E2F48E006D7294 /* GameStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB546925E2F48E006D7294 /* GameStage.swift */; };
 		D209920325E1CB0000635B87 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGameView.swift */; };
 		D209920425E1CB0000635B87 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGameView.swift */; };
 		D209920625E1D6F500635B87 /* GameStageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920525E1D6F500635B87 /* GameStageManager.swift */; };
@@ -37,9 +45,41 @@
 		D2D5174025E31A0000EB98AA /* More_Work.aifc in Resources */ = {isa = PBXBuildFile; fileRef = D2D5173425E31A0000EB98AA /* More_Work.aifc */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1CCB545625E2E5E9006D7294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D290B1DB25E0CE6C00B64800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CCB544625E2E5E8006D7294;
+			remoteInfo = Widget2Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1CCB545925E2E5E9006D7294 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1CCB545825E2E5E9006D7294 /* Widget2Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A0D4386E25E216600042E8FA /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
 		A0D4387325E2578F0042E8FA /* InstaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaView.swift; sourceTree = "<group>"; };
+		1CCB544725E2E5E8006D7294 /* Widget2Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget2Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CCB544925E2E5E8006D7294 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1CCB544B25E2E5E8006D7294 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1CCB544E25E2E5E8006D7294 /* Widget2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget2.swift; sourceTree = "<group>"; };
+		1CCB545125E2E5E9006D7294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CCB545325E2E5E9006D7294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CCB546925E2F48E006D7294 /* GameStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStage.swift; sourceTree = "<group>"; };
+		1CCB547025E2F9F5006D7294 /* Game of Life.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Game of Life.entitlements"; sourceTree = "<group>"; };
 		D209920225E1CB0000635B87 /* EndOfGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfGameView.swift; sourceTree = "<group>"; };
 		D209920525E1D6F500635B87 /* GameStageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStageManager.swift; sourceTree = "<group>"; };
 		D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeView.swift; sourceTree = "<group>"; };
@@ -57,9 +97,19 @@
 		D2D5173225E31A0000EB98AA /* I_am_happy_with_it.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = I_am_happy_with_it.aifc; sourceTree = "<group>"; };
 		D2D5173325E31A0000EB98AA /* The_work_that_Worked.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = The_work_that_Worked.aifc; sourceTree = "<group>"; };
 		D2D5173425E31A0000EB98AA /* More_Work.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = More_Work.aifc; sourceTree = "<group>"; };
+		D2D5172D25E2FE0800EB98AA /* Widget2Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget2Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1CCB544425E2E5E8006D7294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CCB544C25E2E5E8006D7294 /* SwiftUI.framework in Frameworks */,
+				1CCB544A25E2E5E8006D7294 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D290B1E425E0CE6D00B64800 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,12 +127,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CCB544825E2E5E8006D7294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CCB544925E2E5E8006D7294 /* WidgetKit.framework */,
+				1CCB544B25E2E5E8006D7294 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CCB544D25E2E5E8006D7294 /* Widget2 */ = {
+			isa = PBXGroup;
+			children = (
+				1CCB544E25E2E5E8006D7294 /* Widget2.swift */,
+				1CCB545125E2E5E9006D7294 /* Assets.xcassets */,
+				1CCB545325E2E5E9006D7294 /* Info.plist */,
+			);
+			path = Widget2;
+			sourceTree = "<group>";
+		};
 		D290B1DA25E0CE6C00B64800 = {
 			isa = PBXGroup;
 			children = (
+				D2D5172D25E2FE0800EB98AA /* Widget2Extension.entitlements */,
+				1CCB547025E2F9F5006D7294 /* Game of Life.entitlements */,
 				D290B1DF25E0CE6C00B64800 /* Shared */,
 				D290B1E925E0CE6D00B64800 /* iOS */,
 				D290B1F025E0CE6D00B64800 /* macOS */,
+				1CCB544D25E2E5E8006D7294 /* Widget2 */,
+				1CCB544825E2E5E8006D7294 /* Frameworks */,
 				D290B1E825E0CE6D00B64800 /* Products */,
 			);
 			indentWidth = 2;
@@ -94,6 +167,7 @@
 			children = (
 				D290B1E025E0CE6C00B64800 /* Game_of_LifeApp.swift */,
 				D290B1E125E0CE6C00B64800 /* ContentView.swift */,
+				1CCB546925E2F48E006D7294 /* GameStage.swift */,
 				D209920525E1D6F500635B87 /* GameStageManager.swift */,
 				D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */,
 				A0D4386E25E216600042E8FA /* WorkView.swift */,
@@ -110,6 +184,7 @@
 			children = (
 				D290B1E725E0CE6D00B64800 /* Game of Life.app */,
 				D290B1EF25E0CE6D00B64800 /* Game of Life.app */,
+				1CCB544725E2E5E8006D7294 /* Widget2Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +222,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1CCB544625E2E5E8006D7294 /* Widget2Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CCB545C25E2E5E9006D7294 /* Build configuration list for PBXNativeTarget "Widget2Extension" */;
+			buildPhases = (
+				1CCB544325E2E5E8006D7294 /* Sources */,
+				1CCB544425E2E5E8006D7294 /* Frameworks */,
+				1CCB544525E2E5E8006D7294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget2Extension;
+			productName = Widget2Extension;
+			productReference = 1CCB544725E2E5E8006D7294 /* Widget2Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D290B1E625E0CE6D00B64800 /* Game of Life (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D290B1FB25E0CE6D00B64800 /* Build configuration list for PBXNativeTarget "Game of Life (iOS)" */;
@@ -154,10 +246,12 @@
 				D290B1E325E0CE6D00B64800 /* Sources */,
 				D290B1E425E0CE6D00B64800 /* Frameworks */,
 				D290B1E525E0CE6D00B64800 /* Resources */,
+				1CCB545925E2E5E9006D7294 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1CCB545725E2E5E9006D7294 /* PBXTargetDependency */,
 			);
 			name = "Game of Life (iOS)";
 			productName = "Game of Life (iOS)";
@@ -191,6 +285,9 @@
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "AppDev@UW";
 				TargetAttributes = {
+					1CCB544625E2E5E8006D7294 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					D290B1E625E0CE6D00B64800 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -214,11 +311,20 @@
 			targets = (
 				D290B1E625E0CE6D00B64800 /* Game of Life (iOS) */,
 				D290B1EE25E0CE6D00B64800 /* Game of Life (macOS) */,
+				1CCB544625E2E5E8006D7294 /* Widget2Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1CCB544525E2E5E8006D7294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CCB545225E2E5E9006D7294 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D290B1E525E0CE6D00B64800 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +356,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1CCB544325E2E5E8006D7294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CCB546C25E2F48E006D7294 /* GameStage.swift in Sources */,
+				1CCB544F25E2E5E8006D7294 /* Widget2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D290B1E325E0CE6D00B64800 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +373,7 @@
 				A0D4387425E2578F0042E8FA /* InstaView.swift in Sources */,
 				A0D4386F25E216600042E8FA /* WorkView.swift in Sources */,
 				D290B1F325E0CE6D00B64800 /* Game_of_LifeApp.swift in Sources */,
+				1CCB546A25E2F48E006D7294 /* GameStage.swift in Sources */,
 				D2556E3B25E0E44A00377A6F /* GameOfLifeView.swift in Sources */,
 				D209920625E1D6F500635B87 /* GameStageManager.swift in Sources */,
 				D209920325E1CB0000635B87 /* EndOfGameView.swift in Sources */,
@@ -268,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCB546B25E2F48E006D7294 /* GameStage.swift in Sources */,
 				D290B1F625E0CE6D00B64800 /* ContentView.swift in Sources */,
 				A0D4387525E2578F0042E8FA /* InstaView.swift in Sources */,
 				A0D4387025E216600042E8FA /* WorkView.swift in Sources */,
@@ -280,7 +397,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1CCB545725E2E5E9006D7294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CCB544625E2E5E8006D7294 /* Widget2Extension */;
+			targetProxy = 1CCB545625E2E5E9006D7294 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1CCB545A25E2E5E9006D7294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget2Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H866F22W7;
+				INFOPLIST_FILE = Widget2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.iOS.Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CCB545B25E2E5E9006D7294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget2Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H866F22W7;
+				INFOPLIST_FILE = Widget2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.iOS.Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D290B1F925E0CE6D00B64800 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,8 +569,10 @@
 		D290B1FC25E0CE6D00B64800 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Game of Life.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
@@ -406,7 +582,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.iOS";
 				PRODUCT_NAME = "Game of Life";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -417,8 +593,10 @@
 		D290B1FD25E0CE6D00B64800 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Game of Life.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
@@ -428,7 +606,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.iOS";
 				PRODUCT_NAME = "Game of Life";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -443,8 +621,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,7 +632,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.macOS";
 				PRODUCT_NAME = "Game of Life";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -465,8 +645,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +656,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.macOS";
 				PRODUCT_NAME = "Game of Life";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -484,6 +666,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1CCB545C25E2E5E9006D7294 /* Build configuration list for PBXNativeTarget "Widget2Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CCB545A25E2E5E9006D7294 /* Debug */,
+				1CCB545B25E2E5E9006D7294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D290B1DE25E0CE6C00B64800 /* Build configuration list for PBXProject "Game of Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -9,7 +9,7 @@
 import SwiftUI
 
 /// Never gonna give you up
-let finalURL = URL(string: "https://www.youtube.com/watch?v=oHg5SJYRHA0")!
+let finalURL = URL(string: "https://www.youtube.com/watch?v=2ocykBzWDiM")!
 
 
 /// The end is just a start of a new journey

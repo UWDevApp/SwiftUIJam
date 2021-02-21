@@ -7,20 +7,22 @@
 //
 
 import Foundation
+import SwiftUI
+import WidgetKit
 
-enum GameStage {
-  case gameOfLife, end
-}
 
 class GameStageManager: ObservableObject {
   @Published var stage: GameStage = .gameOfLife
 
-  func advance(from stage: GameStage) {
-    switch stage {
+  func advance(from oldStage: GameStage) {
+    switch oldStage {
     case .gameOfLife:
-      self.stage = .end
+      stage = .end
     case .end:
       break
     }
+    GameStage.userDefaults.set(stage.rawValue, forKey: GameStage.key)
+    GameStage.userDefaults.synchronize()
+    WidgetCenter.shared.reloadAllTimelines()
   }
 }
