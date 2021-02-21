@@ -9,14 +9,38 @@
 import SwiftUI
 
 struct ContentView: View {
+  @EnvironmentObject var stageManager: GameStageManager
+
   var body: some View {
-    Text("Hello, world!")
-      .padding()
+    Group {
+      switch stageManager.stage {
+      case .gameOfLife:
+        GameOfLifeView()
+      case .end:
+        EndOfGameView()
+          .transition(.move(edge: .bottom))
+      }
+    }
+    .animation(.spring())
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
+  }
+}
+
+extension View {
+  func centered() -> some View {
+    VStack {
+      Spacer()
+      HStack {
+        Spacer()
+        self
+        Spacer()
+      }
+      Spacer()
+    }
   }
 }

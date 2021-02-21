@@ -36,6 +36,8 @@ struct GameOfLifeView: View {
   @State
   private var isEdited = false
 
+  @EnvironmentObject var stageManager: GameStageManager
+
   /// Initializes an evil game of life that's actually not game of life.
   /// - Parameters:
   ///   - size: side length of the grid
@@ -70,6 +72,7 @@ struct GameOfLifeView: View {
             }
             .buttonStyle(PlainButtonStyle())
             .help("Life is like a box of chocolate")
+            .animation(.easeOut)
           }
         }
       }
@@ -152,7 +155,7 @@ struct GameOfLifeView: View {
 
   /// Moving on to the next stage
   func startGame() {
-    // TODO: Next stage
+    stageManager.advance(from: .gameOfLife)
   }
 }
 
