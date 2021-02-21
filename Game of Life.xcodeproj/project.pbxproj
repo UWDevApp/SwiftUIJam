@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0D4386F25E216600042E8FA /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4386E25E216600042E8FA /* WorkView.swift */; };
+		A0D4387025E216600042E8FA /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4386E25E216600042E8FA /* WorkView.swift */; };
+		A0D4387425E2578F0042E8FA /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4387325E2578F0042E8FA /* InstaView.swift */; };
+		A0D4387525E2578F0042E8FA /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D4387325E2578F0042E8FA /* InstaView.swift */; };
 		D209920325E1CB0000635B87 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGameView.swift */; };
 		D209920425E1CB0000635B87 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGameView.swift */; };
 		D209920625E1D6F500635B87 /* GameStageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920525E1D6F500635B87 /* GameStageManager.swift */; };
@@ -22,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0D4386E25E216600042E8FA /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
+		A0D4387325E2578F0042E8FA /* InstaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaView.swift; sourceTree = "<group>"; };
 		D209920225E1CB0000635B87 /* EndOfGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfGameView.swift; sourceTree = "<group>"; };
 		D209920525E1D6F500635B87 /* GameStageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStageManager.swift; sourceTree = "<group>"; };
 		D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,8 @@
 				D290B1E125E0CE6C00B64800 /* ContentView.swift */,
 				D209920525E1D6F500635B87 /* GameStageManager.swift */,
 				D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */,
+				A0D4386E25E216600042E8FA /* WorkView.swift */,
+				A0D4387325E2578F0042E8FA /* InstaView.swift */,
 				D209920225E1CB0000635B87 /* EndOfGameView.swift */,
 				D290B1E225E0CE6D00B64800 /* Assets.xcassets */,
 			);
@@ -203,6 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D290B1F525E0CE6D00B64800 /* ContentView.swift in Sources */,
+				A0D4387425E2578F0042E8FA /* InstaView.swift in Sources */,
+				A0D4386F25E216600042E8FA /* WorkView.swift in Sources */,
 				D290B1F325E0CE6D00B64800 /* Game_of_LifeApp.swift in Sources */,
 				D2556E3B25E0E44A00377A6F /* GameOfLifeView.swift in Sources */,
 				D209920625E1D6F500635B87 /* GameStageManager.swift in Sources */,
@@ -215,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D290B1F625E0CE6D00B64800 /* ContentView.swift in Sources */,
+				A0D4387525E2578F0042E8FA /* InstaView.swift in Sources */,
+				A0D4387025E216600042E8FA /* WorkView.swift in Sources */,
 				D290B1F425E0CE6D00B64800 /* Game_of_LifeApp.swift in Sources */,
 				D2556E3C25E0E44A00377A6F /* GameOfLifeView.swift in Sources */,
 				D209920725E1D6F500635B87 /* GameStageManager.swift in Sources */,
