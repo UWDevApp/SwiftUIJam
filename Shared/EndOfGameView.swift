@@ -32,6 +32,7 @@ struct EndOfGameView: View {
     }
     .edgesIgnoringSafeArea(.all)
     .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .help("But wait, there is one last thing")
     .onTapGesture {
       openURL(finalURL)
     }
