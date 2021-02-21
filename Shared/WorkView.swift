@@ -15,6 +15,9 @@ struct WorkView: View {
   
   @Environment(\.horizontalSizeClass) var hSizeClass
   @Environment(\.verticalSizeClass) var vSizeClass
+
+  @EnvironmentObject var stageManager: GameStageManager
+
   
   let letters: String = "abcdefghijklmnopqrstuvwxyz"
   
@@ -31,7 +34,7 @@ struct WorkView: View {
   }
 
   func trollWithNumPad() {
-    trollNumFieldVal = String((Int(trollNumFieldVal) ?? 69) + Int.random(in: 1...4))
+    trollNumFieldVal = String((Int(trollNumFieldVal) ?? 69) + Int.random(in: 0...3))
   }
 
   func trollWithSlider() {
@@ -106,9 +109,9 @@ struct WorkView: View {
         HStack {
           Spacer()
           // do we want more?
-          if trollNumFieldVal == "42" && trollText == "Xocde" && trollSliderVal == 69 {
+          if trollNumFieldVal == "42" && trollText == "Xcode" && trollSliderVal == 69 {
             Button("Next", action: {
-              // TODO
+              stageManager.advance(from: .work)
             })
           }
         }

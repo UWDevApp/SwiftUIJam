@@ -9,7 +9,7 @@
 import Foundation
 
 enum GameStage: Int {
-  case gameOfLife, end
+  case gameOfLife, work, insta, end
 }
 
 extension GameStage {

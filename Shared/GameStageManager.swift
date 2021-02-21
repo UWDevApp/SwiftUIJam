@@ -17,9 +17,13 @@ class GameStageManager: ObservableObject {
   func advance(from oldStage: GameStage) {
     switch oldStage {
     case .gameOfLife:
-      stage = .end
+      stage = .work
     case .end:
       break
+    case .work:
+      stage = .end
+    case .insta:
+      stage = .end
     }
     GameStage.userDefaults.set(stage.rawValue, forKey: GameStage.key)
     GameStage.userDefaults.synchronize()

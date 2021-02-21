@@ -19,6 +19,12 @@ struct ContentView: View {
       case .end:
         EndOfGameView()
           .transition(.move(edge: .bottom))
+      case .work:
+        WorkView()
+          .transition(.slide)
+      case .insta:
+        InstaView()
+          .transition(.scale)
       }
     }
     .animation(.spring())
