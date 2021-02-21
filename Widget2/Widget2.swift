@@ -27,7 +27,7 @@ struct Provider: IntentTimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-          let entry = SimpleEntry(date: entryDate, configuration: configuration, quotes: [])
+          let entry = SimpleEntry(date: entryDate, configuration: configuration, quotes: ["\"Starting over is harder than starting up\"","\"Swift never runs around and deserts you\"",""])
             entries.append(entry)
         }
 
@@ -50,19 +50,30 @@ func dateFormat(date:Date) -> String {
 
 struct Widget2EntryView : View {
     var entry: Provider.Entry
+  
+  @AppStorage("levelData",store: UserDefaults(suiteName: "group.sharedLevel"))
+  var levelValue: GameStage = GameStage.gameOfLife
     
     var body: some View {
       HStack{
         VStack{
-          Text("Quotes for life on \(dateFormat(date:entry.date))")
+          Text("Quotes for life on \(dateFormat(date:entry.date))").foregroundColor(Color(.systemGreen))
           Spacer()
-          Text(entry.quotes[0])
+          ForEach(0..<levelValue.rawValue+1) {levelValue in
+            Text(entry.quotes[levelValue])
+          }
+          
         }
         Spacer()
       }.padding(.all,10)
       .background(
-        ContainerRelativeShape()
-          .fill(Color(.systemGray4)))
+          LinearGradient(
+            gradient: Gradient(colors: [
+              Color(red: 3 / 255, green: 3 / 255, blue: 3 / 255),
+              Color(red: 114 / 255, green: 114 / 255, blue: 131 / 255),
+            ]),
+            startPoint: .top, endPoint: .bottom
+          ))
     }
 }
 
@@ -75,13 +86,17 @@ struct Widget2: Widget {
             Widget2EntryView(entry: entry)
         }
         .configurationDisplayName("Game of Life Widget")
-        .description("Inspirational quotes widget.")
+        .description("Some wholesome quotes for you to stay in the game")
     }
 }
 
 struct Widget2_Previews: PreviewProvider {
     static var previews: some View {
-        Widget2EntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), quotes: ["\"Starting over is harder than starting up\""]))
+        Widget2EntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), quotes: ["\"Starting over is harder than starting up\"","\"Swift never runs around and deserts you\"",""]))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+      Widget2EntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), quotes: ["\"Starting over is harder than starting up\"","\"Swift never runs around and deserts you\"",""]))
+          .previewContext(WidgetPreviewContext(family: .systemMedium))
+      Widget2EntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), quotes: ["\"Starting over is harder than starting up\"","\"Swift never runs around and deserts you\"",""]))
+          .previewContext(WidgetPreviewContext(family: .systemLarge))
     }
 }

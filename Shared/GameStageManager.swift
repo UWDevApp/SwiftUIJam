@@ -7,10 +7,9 @@
 //
 
 import Foundation
+import SwiftUI
+import WidgetKit
 
-enum GameStage {
-  case gameOfLife, end
-}
 
 class GameStageManager: ObservableObject {
   @Published var stage: GameStage = .gameOfLife
@@ -22,5 +21,8 @@ class GameStageManager: ObservableObject {
     case .end:
       break
     }
+    // let userDefaults = UserDefaults(suiteName: "group.com.YourCompany.YourApp")
+    UserDefaults(suiteName:"group.sharedLevel")!.set(stage.rawValue, forKey: "levelData")
+    WidgetCenter.shared.reloadAllTimelines()
   }
 }

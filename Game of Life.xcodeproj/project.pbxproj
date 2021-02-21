@@ -14,6 +14,9 @@
 		1CCB545425E2E5E9006D7294 /* Widget2.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB545025E2E5E8006D7294 /* Widget2.intentdefinition */; };
 		1CCB545525E2E5E9006D7294 /* Widget2.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB545025E2E5E8006D7294 /* Widget2.intentdefinition */; };
 		1CCB545825E2E5E9006D7294 /* Widget2Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1CCB544725E2E5E8006D7294 /* Widget2Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1CCB546A25E2F48E006D7294 /* GameStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB546925E2F48E006D7294 /* GameStage.swift */; };
+		1CCB546B25E2F48E006D7294 /* GameStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB546925E2F48E006D7294 /* GameStage.swift */; };
+		1CCB546C25E2F48E006D7294 /* GameStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB546925E2F48E006D7294 /* GameStage.swift */; };
 		D209920325E1CB0000635B87 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGameView.swift */; };
 		D209920425E1CB0000635B87 /* EndOfGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920225E1CB0000635B87 /* EndOfGameView.swift */; };
 		D209920625E1D6F500635B87 /* GameStageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209920525E1D6F500635B87 /* GameStageManager.swift */; };
@@ -60,6 +63,8 @@
 		1CCB545025E2E5E8006D7294 /* Widget2.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widget2.intentdefinition; sourceTree = "<group>"; };
 		1CCB545125E2E5E9006D7294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CCB545325E2E5E9006D7294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CCB546925E2F48E006D7294 /* GameStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStage.swift; sourceTree = "<group>"; };
+		1CCB547025E2F9F5006D7294 /* Game of Life.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Game of Life.entitlements"; sourceTree = "<group>"; };
 		D209920225E1CB0000635B87 /* EndOfGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfGameView.swift; sourceTree = "<group>"; };
 		D209920525E1D6F500635B87 /* GameStageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStageManager.swift; sourceTree = "<group>"; };
 		D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeView.swift; sourceTree = "<group>"; };
@@ -123,6 +128,7 @@
 		D290B1DA25E0CE6C00B64800 = {
 			isa = PBXGroup;
 			children = (
+				1CCB547025E2F9F5006D7294 /* Game of Life.entitlements */,
 				D290B1DF25E0CE6C00B64800 /* Shared */,
 				D290B1E925E0CE6D00B64800 /* iOS */,
 				D290B1F025E0CE6D00B64800 /* macOS */,
@@ -143,6 +149,7 @@
 				D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */,
 				D209920225E1CB0000635B87 /* EndOfGameView.swift */,
 				D290B1E225E0CE6D00B64800 /* Assets.xcassets */,
+				1CCB546925E2F48E006D7294 /* GameStage.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -303,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCB546C25E2F48E006D7294 /* GameStage.swift in Sources */,
 				1CCB544F25E2E5E8006D7294 /* Widget2.swift in Sources */,
 				1CCB545425E2E5E9006D7294 /* Widget2.intentdefinition in Sources */,
 			);
@@ -314,6 +322,7 @@
 			files = (
 				D290B1F525E0CE6D00B64800 /* ContentView.swift in Sources */,
 				D290B1F325E0CE6D00B64800 /* Game_of_LifeApp.swift in Sources */,
+				1CCB546A25E2F48E006D7294 /* GameStage.swift in Sources */,
 				D2556E3B25E0E44A00377A6F /* GameOfLifeView.swift in Sources */,
 				D209920625E1D6F500635B87 /* GameStageManager.swift in Sources */,
 				D209920325E1CB0000635B87 /* EndOfGameView.swift in Sources */,
@@ -325,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCB546B25E2F48E006D7294 /* GameStage.swift in Sources */,
 				D290B1F625E0CE6D00B64800 /* ContentView.swift in Sources */,
 				D290B1F425E0CE6D00B64800 /* Game_of_LifeApp.swift in Sources */,
 				D2556E3C25E0E44A00377A6F /* GameOfLifeView.swift in Sources */,
@@ -350,6 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				INFOPLIST_FILE = Widget2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -372,6 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				INFOPLIST_FILE = Widget2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,7 +518,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Game of Life.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -528,7 +542,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Game of Life.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
