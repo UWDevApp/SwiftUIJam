@@ -32,7 +32,9 @@ struct InstaView: View {
         }
         
         Image(systemName: "questionmark") //placeholder, main image OK we need to find something for this cause even Lucas cannot seem to get over the sheer degeneracy of using random people's pics
-        
+          .onTapGesture(count: 2) {
+            //do something when image is double tapped (play audio??)
+          }
         HStack {
           HStack(spacing: 15) {
             Image(systemName: "heart")
