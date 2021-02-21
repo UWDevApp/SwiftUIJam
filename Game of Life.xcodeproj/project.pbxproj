@@ -11,8 +11,6 @@
 		1CCB544C25E2E5E8006D7294 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCB544B25E2E5E8006D7294 /* SwiftUI.framework */; };
 		1CCB544F25E2E5E8006D7294 /* Widget2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB544E25E2E5E8006D7294 /* Widget2.swift */; };
 		1CCB545225E2E5E9006D7294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CCB545125E2E5E9006D7294 /* Assets.xcassets */; };
-		1CCB545425E2E5E9006D7294 /* Widget2.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB545025E2E5E8006D7294 /* Widget2.intentdefinition */; };
-		1CCB545525E2E5E9006D7294 /* Widget2.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB545025E2E5E8006D7294 /* Widget2.intentdefinition */; };
 		1CCB545825E2E5E9006D7294 /* Widget2Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1CCB544725E2E5E8006D7294 /* Widget2Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1CCB546A25E2F48E006D7294 /* GameStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB546925E2F48E006D7294 /* GameStage.swift */; };
 		1CCB546B25E2F48E006D7294 /* GameStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB546925E2F48E006D7294 /* GameStage.swift */; };
@@ -60,7 +58,6 @@
 		1CCB544925E2E5E8006D7294 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		1CCB544B25E2E5E8006D7294 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		1CCB544E25E2E5E8006D7294 /* Widget2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget2.swift; sourceTree = "<group>"; };
-		1CCB545025E2E5E8006D7294 /* Widget2.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widget2.intentdefinition; sourceTree = "<group>"; };
 		1CCB545125E2E5E9006D7294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CCB545325E2E5E9006D7294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CCB546925E2F48E006D7294 /* GameStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStage.swift; sourceTree = "<group>"; };
@@ -76,6 +73,7 @@
 		D290B1EF25E0CE6D00B64800 /* Game of Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D290B1F125E0CE6D00B64800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D290B1F225E0CE6D00B64800 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D2D5172D25E2FE0800EB98AA /* Widget2Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget2Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				1CCB544E25E2E5E8006D7294 /* Widget2.swift */,
-				1CCB545025E2E5E8006D7294 /* Widget2.intentdefinition */,
 				1CCB545125E2E5E9006D7294 /* Assets.xcassets */,
 				1CCB545325E2E5E9006D7294 /* Info.plist */,
 			);
@@ -128,6 +125,7 @@
 		D290B1DA25E0CE6C00B64800 = {
 			isa = PBXGroup;
 			children = (
+				D2D5172D25E2FE0800EB98AA /* Widget2Extension.entitlements */,
 				1CCB547025E2F9F5006D7294 /* Game of Life.entitlements */,
 				D290B1DF25E0CE6C00B64800 /* Shared */,
 				D290B1E925E0CE6D00B64800 /* iOS */,
@@ -145,11 +143,11 @@
 			children = (
 				D290B1E025E0CE6C00B64800 /* Game_of_LifeApp.swift */,
 				D290B1E125E0CE6C00B64800 /* ContentView.swift */,
+				1CCB546925E2F48E006D7294 /* GameStage.swift */,
 				D209920525E1D6F500635B87 /* GameStageManager.swift */,
 				D2556E3A25E0E44A00377A6F /* GameOfLifeView.swift */,
 				D209920225E1CB0000635B87 /* EndOfGameView.swift */,
 				D290B1E225E0CE6D00B64800 /* Assets.xcassets */,
-				1CCB546925E2F48E006D7294 /* GameStage.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -312,7 +310,6 @@
 			files = (
 				1CCB546C25E2F48E006D7294 /* GameStage.swift in Sources */,
 				1CCB544F25E2E5E8006D7294 /* Widget2.swift in Sources */,
-				1CCB545425E2E5E9006D7294 /* Widget2.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +323,6 @@
 				D2556E3B25E0E44A00377A6F /* GameOfLifeView.swift in Sources */,
 				D209920625E1D6F500635B87 /* GameStageManager.swift in Sources */,
 				D209920325E1CB0000635B87 /* EndOfGameView.swift in Sources */,
-				1CCB545525E2E5E9006D7294 /* Widget2.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget2Extension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H866F22W7;
 				INFOPLIST_FILE = Widget2/Info.plist;
@@ -368,7 +365,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.Widget2";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.iOS.Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -382,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget2Extension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H866F22W7;
 				INFOPLIST_FILE = Widget2/Info.plist;
@@ -391,7 +389,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.Widget2";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.iOS.Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -528,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.iOS";
 				PRODUCT_NAME = "Game of Life";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -552,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.iOS";
 				PRODUCT_NAME = "Game of Life";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -570,6 +568,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -577,7 +576,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.macOS";
 				PRODUCT_NAME = "Game of Life";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -593,6 +592,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2H866F22W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -600,7 +600,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.uwdev.Game-of-Life.macOS";
 				PRODUCT_NAME = "Game of Life";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;

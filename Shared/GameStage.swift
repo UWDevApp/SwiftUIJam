@@ -11,3 +11,13 @@ import Foundation
 enum GameStage: Int {
   case gameOfLife, end
 }
+
+extension GameStage {
+  static let key = "levelData"
+  
+  static let userDefaults = UserDefaults(suiteName: "app.uwdev.Game-of-Life")!
+
+  static var current: GameStage {
+    GameStage(rawValue: GameStage.userDefaults.integer(forKey: key))!
+  }
+}

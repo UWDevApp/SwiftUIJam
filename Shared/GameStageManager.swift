@@ -14,15 +14,15 @@ import WidgetKit
 class GameStageManager: ObservableObject {
   @Published var stage: GameStage = .gameOfLife
 
-  func advance(from stage: GameStage) {
-    switch stage {
+  func advance(from oldStage: GameStage) {
+    switch oldStage {
     case .gameOfLife:
-      self.stage = .end
+      stage = .end
     case .end:
       break
     }
-    // let userDefaults = UserDefaults(suiteName: "group.com.YourCompany.YourApp")
-    UserDefaults(suiteName:"group.sharedLevel")!.set(stage.rawValue, forKey: "levelData")
+    GameStage.userDefaults.set(stage.rawValue, forKey: GameStage.key)
+    GameStage.userDefaults.synchronize()
     WidgetCenter.shared.reloadAllTimelines()
   }
 }
